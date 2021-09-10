@@ -11,6 +11,7 @@ function EventListener() {
             priority: priority
         });
 
+        // rearrange the handlers for this event based on priority
         _callbackMap[eventName].sort((a, b) => {
             if (a.priority < b.priority) {
                 return -1;
