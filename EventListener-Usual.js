@@ -1,6 +1,6 @@
 function EventListener() {
-    let _callbackA;
-    let _callbackB;
+    let _callbackA = () => {};
+    let _callbackB = () => {};
 
     this.registerEventAHandler = function(callback) {
         _callbackA = callback;
